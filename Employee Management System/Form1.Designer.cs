@@ -126,7 +126,7 @@
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Image = global::Employee_Management_System.Properties.Resources.Employee_Image;
+            this.pictureBox1.Image = global::Employee_Management_System.Properties.Resources.Employee_icon;
             this.pictureBox1.Location = new System.Drawing.Point(130, 80);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(127, 82);
@@ -134,7 +134,7 @@
             this.pictureBox1.TabIndex = 1;
             this.pictureBox1.TabStop = false;
             // 
-            // CrossBtn
+            // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -150,7 +150,7 @@
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "CrossBtn";
+            this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Login";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();

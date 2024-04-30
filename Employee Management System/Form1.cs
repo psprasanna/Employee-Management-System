@@ -19,7 +19,8 @@ namespace Employee_Management_System
 
         private void CrossBtn_Click(object sender, EventArgs e)
         {
-            this.Close();
+            //this.Close();
+            FormUtils.CloseApplication();
         }
 
         private void ClearBtn_Click(object sender, EventArgs e)
@@ -45,5 +46,21 @@ namespace Employee_Management_System
                 MessageBox.Show("Please enter correct username and password");
             }
         }
+
+        /*private void YourForm_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            if (e.CloseReason == CloseReason.UserClosing)
+            {
+                e.Cancel = true; 
+
+                DialogResult result = MessageBox.Show("Do you want to close the application?", "Confirmation", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+
+                if (result == DialogResult.Yes)
+                {
+                    Application.Exit();
+                }
+            }
+        }
+        */
     }
 }

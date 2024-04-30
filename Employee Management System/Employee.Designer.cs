@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             this.label1 = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
@@ -53,8 +52,9 @@
             this.HomeBtn = new System.Windows.Forms.Button();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.CrossBtn = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -67,16 +67,6 @@
             this.label1.Size = new System.Drawing.Size(115, 25);
             this.label1.TabIndex = 1;
             this.label1.Text = "Employee";
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::Employee_Management_System.Properties.Resources.Employee_Image;
-            this.pictureBox1.Location = new System.Drawing.Point(2, 2);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(111, 70);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 2;
-            this.pictureBox1.TabStop = false;
             // 
             // label2
             // 
@@ -323,13 +313,23 @@
             // CrossBtn
             // 
             this.CrossBtn.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.CrossBtn.Location = new System.Drawing.Point(834, 2);
+            this.CrossBtn.Location = new System.Drawing.Point(833, 2);
             this.CrossBtn.Name = "CrossBtn";
             this.CrossBtn.Size = new System.Drawing.Size(29, 25);
             this.CrossBtn.TabIndex = 27;
             this.CrossBtn.Text = "X";
             this.CrossBtn.UseVisualStyleBackColor = true;
             this.CrossBtn.Click += new System.EventHandler(this.CrossBtn_Click);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::Employee_Management_System.Properties.Resources.Employee_icon;
+            this.pictureBox1.Location = new System.Drawing.Point(2, 2);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(111, 70);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 2;
+            this.pictureBox1.TabStop = false;
             // 
             // Employee
             // 
@@ -367,8 +367,8 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Employee";
             this.Load += new System.EventHandler(this.Employee_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

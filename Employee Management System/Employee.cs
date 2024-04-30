@@ -166,7 +166,7 @@ namespace Employee_Management_System
 
         private void CrossBtn_Click(object sender, EventArgs e)
         {
-            this.Close();
+            FormUtils.CloseApplication();
         }
     }
 }
